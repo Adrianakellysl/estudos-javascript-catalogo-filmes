@@ -1,6 +1,6 @@
 # Catálogo de Filmes
 
-Projeto desenvolvido para praticar conceitos básicos de JavaScript, HTML e CSS do curso de Javascript básico do Fernado Papito.
+Projeto desenvolvido para praticar conceitos básicos de JavaScript, HTML e CSS do curso de Javascript básico do Fernando Papito.
 
 ## Funcionalidades
 
