@@ -1,0 +1,164 @@
+body {
+   background-image: url(/images/starwars-images/Gnv0Gp3ZFonkSNhMKu3aZ0EptZUsqnaoAVrYyVvpq-MxJWjcdf8OmQg9GBV7dNbvBTG7SLQYoSv3Hvfv58PAr5vmDlm7QQt9K1EcyZO9Wwvjvu75iBR7Jb6YUqXyEh6FIscuYaUWxLHTynb5myLjRud0sms_Hlb_XjXudG0Vt2A.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-color: #111;
+   color: #CCC;
+   font-family: "Handlee", cursive;
+   
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(13, 13, 14, 0.692);
+    z-index: -1;
+}
+
+#app {
+   text-align: center;
+   width: 100%;
+   margin: auto;
+}
+
+h1 {
+   font-family: "Acme", sans-serif;
+}
+
+small {
+   font-size: 20px;
+}
+
+p {
+   font-size: 20px;
+   font-weight: 500;
+   color: #fff;
+}
+.top {
+   padding: 1rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   text-align: left;
+
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+
+   background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.98),
+        rgba(0,0,0,0.85)
+    );
+   backdrop-filter: blur(10px);
+}
+
+.top h1 {
+   font-size: 2em;
+   margin: 0;
+   color: #fff;
+}
+
+.top form {
+   margin: 0;
+}
+
+.top form {
+   text-align: right;
+}
+
+.characters {
+   padding-top: 1rem;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   overflow-y: auto;
+   
+}
+
+.characters .item {
+   padding: 20px;
+}
+
+.characters .item img {
+   width: 15rem;
+   height: 20rem;
+   border-radius: 20%;
+   border: 5px #111 solid;
+}
+
+.characters .item img:hover {
+   border: 5px #FD4 solid;
+}
+
+.characters .item .like {
+   color: #FD4;
+   cursor: pointer;
+   font-size: 1.5rem;
+}
+
+.characters .item .delete {
+   color: #F65;
+   cursor: pointer;
+   font-size: 1.5rem;
+}
+
+input {
+   padding: 1em 1.35em;
+   border-radius: 8px;
+   border: none;
+   font-size: 1rem;
+   font-family: "Handlee", cursive;
+}
+
+button {
+   padding:  1em 1.35em;
+   border-radius: 8px;
+   background-color: #FD4;
+   color: #111;
+   font-size: 1rem;
+   border: none;
+   font-family: "Handlee", cursive;
+}
+
+@media (max-width: 1200px) {
+   .characters {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media (max-width: 900px) {
+   .characters {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 634px) {
+   .top h1 {
+      font-size: 20px ;
+   }
+
+   .top small {
+      font-size: 14px;
+   }
+   .characters {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   }
+
+   form {
+      display: flex;
+      flex-direction: row;
+      gap: 7px;
+   }
+   input {
+      padding: 0.5em;
+   }
+   
+   button {
+      padding: 0.5em;
+   }
+}
